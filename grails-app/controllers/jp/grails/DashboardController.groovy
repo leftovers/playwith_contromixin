@@ -22,4 +22,8 @@ class DashboardController {
         }
         [map:map]
     }
+
+    def overridethis = {
+        render(text:"over ride me")
+    }
 }
