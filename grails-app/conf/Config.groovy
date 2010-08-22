@@ -81,3 +81,9 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
+
+grails.plugins.dynamicController.mixins = [
+    'jp.grails.DashboardControllerMixin': 'jp.grails.DashboardController',
+    'jp.grails.ExtraControllerMixin': 'jp.grails.DashboardController'
+]
+
