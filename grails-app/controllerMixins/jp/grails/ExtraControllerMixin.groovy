@@ -2,6 +2,6 @@ package jp.grails
 
 class ExtraControllerMixin {
     def extra = {
-        render(text:"extra called !?")
+        render(text:"extra called !? ${infomation}")
     }
 }

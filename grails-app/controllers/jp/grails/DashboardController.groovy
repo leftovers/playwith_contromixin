@@ -5,7 +5,7 @@ import org.springframework.beans.BeanWrapper
 import org.springframework.beans.PropertyAccessorFactory
 
 class DashboardController {
-
+    static String infomation='Hello from DashboardController'
     //part of the code borrowed from appinfo plugin
     def index = {
         Map map = [:]
