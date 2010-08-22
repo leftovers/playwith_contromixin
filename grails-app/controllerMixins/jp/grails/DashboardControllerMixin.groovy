@@ -1,10 +1,11 @@
 package jp.grails
 
 class DashboardControllerMixin {
+    static String infomation='Override infomation property'
     def exampleMixinAction = {
         render(text:"exampleMixinAction called !? ${infomation}")
     }
     def overridethis = {
-        render(text:"over ride :DashboardControllerMixin")
+        render(text:"override :DashboardControllerMixin")
     }
 }

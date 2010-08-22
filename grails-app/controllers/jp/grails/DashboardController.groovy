@@ -5,7 +5,7 @@ import org.springframework.beans.BeanWrapper
 import org.springframework.beans.PropertyAccessorFactory
 
 class DashboardController {
-    static String infomation='Hello from DashboardController'
+    static String infomation='infomation property from DashboardController'
     //part of the code borrowed from appinfo plugin
     def index = {
         Map map = [:]
@@ -24,6 +24,15 @@ class DashboardController {
     }
 
     def overridethis = {
-        render(text:"over ride me")
+        render(text:"override me")
+    }
+
+    def getmixinstring = {
+        try {
+            render(text:"$mixinInfo")
+        }
+        catch(MissingPropertyException e) {
+            render(text:"can't access mixin properties")
+        }
     }
 }
